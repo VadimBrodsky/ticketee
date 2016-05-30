@@ -25,4 +25,15 @@
   }
 }
 
+a.new {
+  @extend .btn;
+  @extend .btn-success;
+
+  &:before {
+    font-family: 'FontAwesome';
+    @extend .fa-plus;
+    padding-right: 0.5em;
+  }
+}
+
 
