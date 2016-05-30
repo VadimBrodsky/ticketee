@@ -6,7 +6,7 @@ RSpec.feature 'Users can edit existing projects' do
 
     visit '/'
     click_link 'Sublime Text 3'
-    click_link 'Edit'
+    click_link 'Edit Project'
   end
 
   scenario 'with valid attributes' do
