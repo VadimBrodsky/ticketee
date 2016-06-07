@@ -23,3 +23,10 @@
 
 <p> <%= @project.description %> </p>
 
+<ul id="tickets">
+  <% @tickets.each do |ticket| %>
+    <li>
+      <%= link_to ticket.name, [@project, ticket] %>
+    </li>
+  <% end %>
+</ul>

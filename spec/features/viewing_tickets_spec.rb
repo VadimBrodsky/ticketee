@@ -4,7 +4,7 @@ RSpec.feature 'Users can view tickets' do
   before do
     sublime = FactoryGirl.create(:project, name: 'Sublime Text 3')
     FactoryGirl.create(:ticket, project: sublime, name: 'Make it shiny!',
-                       description: 'Gradients!, Starbursts! Oh my!')
+                       description: 'Gradients! Starbursts! Oh my!')
 
     ie = FactoryGirl.create(:project, name: 'Internet Explorer')
     FactoryGirl.create(:ticket, project: ie, name: 'Standards compliance',

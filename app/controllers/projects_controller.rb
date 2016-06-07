@@ -21,6 +21,7 @@ class ProjectsController < ApplicationController
   end
 
   def show
+    @tickets = @project.tickets.all
   end
 
   def edit
